@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#00ab55">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Search</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/reset_styles.css">
+  <link rel="stylesheet" href="/libs/glightbox.min.css">
+  <link rel="stylesheet" href="/libs/splide.min.css">
+  <link rel="stylesheet" href="/libs/nouislider.min.css">
+  <link rel="stylesheet" href="/css/main-styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="/" class="logotype header__logotype">
+        <picture class="logotype__image">
+          <source srcset="/img/logo.svg" type="image/svg+xml">
+          <source srcset="/img/logo.png" type="image/png">
+          <img src="/img/logo.svg" alt="Логотип Главокна">
+        </picture>
+        <span class="logotype__divider"></span>
+        <span class="logotype__text">работаем с 1999 года<br>предприятие полного цикла</span>
+      </a>
+      <!-- /.logotype header__logotype -->
+      <button class="nav__toggler" type="button" aria-expanded="false" aria-controls="header__nav">
+        <span class="nav__toggler-icon">
+          <svg width="11" height="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_13_231)">
+              <circle cx="1.5" cy="1.75098" r="1.5" fill="white" />
+              <circle cx="9.5" cy="1.75098" r="1.5" fill="white" />
+              <circle cx="1.5" cy="9.75098" r="1.5" fill="white" />
+              <circle cx="9.5" cy="9.75098" r="1.5" fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_13_231">
+                <rect width="11" height="11" fill="white" transform="translate(0 0.250977)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </span>
+        Меню
+      </button>
+      <nav class="nav header__nav" id="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item header__nav-item">
+            <a href="/catalog.html" class="nav__link nav__link--catalog">
+              <span class="nav__link-icon">
+                <svg width="11" height="11" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_13_231)">
+                    <circle cx="1.5" cy="1.75098" r="1.5" fill="white" />
+                    <circle cx="9.5" cy="1.75098" r="1.5" fill="white" />
+                    <circle cx="1.5" cy="9.75098" r="1.5" fill="white" />
+                    <circle cx="9.5" cy="9.75098" r="1.5" fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_13_231">
+                      <rect width="11" height="11" fill="white" transform="translate(0 0.250977)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              Каталог
+            </a>
+          </li>
+          <!-- /.nav__item header__nav-item -->
+          <li class="nav__item header__nav-item">
+            <a href="/about.html" class="nav__link">
+              О компании
+            </a>
+          </li>
+          <!-- /.nav__item header__nav-item -->
+          <li class="nav__item header__nav-item dropdown">
+            <a href="/products.html" class="nav__link dropdown__toggle">
+              Продукция
+            </a>
+            <div class="dropdown__menu">
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <a href="/" class="nav__link">Пластиковые окна</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="/" class="nav__link">Деревянные окна</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="/" class="nav__link">Алюминиевые окна</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="/" class="nav__link">Остекление балконов</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="/" class="nav__link">Остекление коттеджеи</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- /.nav__item header__nav-item.dropdown -->
+          <li class="nav__item header__nav-item">
+            <a href="/buyer.html" class="nav__link">Покупателю</a>
+          </li>
+          <!-- /.nav__item header__nav-item -->
+          <li class="nav__item header__nav-item">
+            <a href="/blog.html" class="nav__link">Блог</a>
+          </li>
+          <!-- /.nav__item header__nav-item -->
+          <li class="nav__item header__nav-item">
+            <a href="/contacts.html" class="nav__link">Контакты</a>
+          </li>
+          <!-- /.nav__item header__nav-item -->
+          <li class="nav__item header__nav-item">
+            <a href="/sales.html" class="nav__link nav__link--sale">
+              Акции
+              <span class="nav__link-icon">
+                <svg width="11" height="9" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.75675 0.780388C7.91493 0.48627 8.16758 0.339211 8.51469 0.339211H8.75855C9.009 0.339211 9.17816 0.408539 9.26604 0.547195C9.35392 0.681649 9.34073 0.856018 9.22649 1.0703L5.10726 8.71526C4.94469 9.01358 4.69204 9.16274 4.34932 9.16274H4.09887C3.84842 9.16274 3.67926 9.09552 3.59138 8.96106C3.50351 8.82241 3.51669 8.64593 3.63093 8.43165L7.75675 0.780388ZM2.77413 1.87703C2.60716 2.0535 2.52368 2.26568 2.52368 2.51358C2.52368 2.76148 2.60716 2.97577 2.77413 3.15644C2.94549 3.33291 3.16298 3.42114 3.42661 3.42114C3.69024 3.42114 3.90554 3.33291 4.07251 3.15644C4.24387 2.97577 4.32955 2.76148 4.32955 2.51358C4.32955 2.26568 4.24387 2.0535 4.07251 1.87703C3.90554 1.69635 3.69024 1.60602 3.42661 1.60602C3.16298 1.60602 2.94549 1.69635 2.77413 1.87703ZM1.64051 4.12072C1.16598 3.68375 0.928711 3.14804 0.928711 2.51358C0.928711 1.87913 1.16598 1.34341 1.64051 0.906438C2.11944 0.469464 2.71481 0.250977 3.42661 0.250977C4.13842 0.250977 4.73159 0.469464 5.20612 0.906438C5.68505 1.34341 5.92452 1.87913 5.92452 2.51358C5.92452 3.14804 5.68505 3.68375 5.20612 4.12072C4.73159 4.5577 4.13842 4.77619 3.42661 4.77619C2.71481 4.77619 2.11944 4.5577 1.64051 4.12072ZM8.77832 6.35182C8.61136 6.52829 8.52787 6.74047 8.52787 6.98837C8.52787 7.23627 8.61136 7.45056 8.77832 7.63123C8.94968 7.8077 9.16718 7.89593 9.43081 7.89593C9.69444 7.89593 9.90974 7.8077 10.0767 7.63123C10.2481 7.45056 10.3337 7.23627 10.3337 6.98837C10.3337 6.74047 10.2481 6.52829 10.0767 6.35182C9.90974 6.17114 9.69444 6.08081 9.43081 6.08081C9.16718 6.08081 8.94968 6.17114 8.77832 6.35182ZM7.64471 8.59552C7.17017 8.15854 6.93291 7.62283 6.93291 6.98837C6.93291 6.35392 7.17017 5.8182 7.64471 5.38123C8.12364 4.94425 8.719 4.72577 9.43081 4.72577C10.1426 4.72577 10.7358 4.94425 11.2103 5.38123C11.6892 5.8182 11.9287 6.35392 11.9287 6.98837C11.9287 7.62283 11.6892 8.15854 11.2103 8.59552C10.7358 9.03249 10.1426 9.25098 9.43081 9.25098C8.719 9.25098 8.12364 9.03249 7.64471 8.59552Z"
+                    fill="white" />
+                </svg>
+              </span>
+            </a>
+          </li>
+          <!-- /.nav__item header__nav-item -->
+        </ul>
+        <div class="search header__search">
+          <button class="search__toggler" type="button" aria-expanded="false" aria-controls="search__form"
+            aria-selected="header__nav">
+            <svg width="21" height="22" aria-hidden="true" viewBox="0 0 21 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.9963 18.0047L16.52 15.5372C17.8624 13.8788 18.5173 11.7685 18.3496 9.64149C18.1818 7.51446 17.2043 5.53287 15.6186 4.10535C14.0328 2.67783 11.9598 1.91322 9.82686 1.96918C7.69396 2.02514 5.66384 2.8974 4.15514 4.40611C2.64643 5.91482 1.77416 7.94494 1.7182 10.0778C1.66224 12.2107 2.42686 14.2838 3.85438 15.8695C5.2819 17.4553 7.26348 18.4328 9.39051 18.6005C11.5175 18.7683 13.6279 18.1134 15.2863 16.771L17.7538 19.2472C17.8351 19.3293 17.9319 19.3944 18.0385 19.4388C18.1451 19.4832 18.2595 19.5061 18.375 19.5061C18.4905 19.5061 18.6049 19.4832 18.7115 19.4388C18.8181 19.3944 18.9149 19.3293 18.9963 19.2472C19.0783 19.1659 19.1434 19.0691 19.1878 18.9625C19.2322 18.8559 19.2551 18.7415 19.2551 18.626C19.2551 18.5105 19.2322 18.3961 19.1878 18.2895C19.1434 18.1829 19.0783 18.0861 18.9963 18.0047ZM3.50002 10.3135C3.50002 9.01555 3.8849 7.74676 4.606 6.66756C5.3271 5.58837 6.35202 4.74724 7.55116 4.25054C8.7503 3.75383 10.0698 3.62388 11.3428 3.87709C12.6158 4.13031 13.7851 4.75532 14.7029 5.67311C15.6207 6.59089 16.2457 7.76021 16.4989 9.03321C16.7521 10.3062 16.6222 11.6257 16.1255 12.8249C15.6288 14.024 14.7876 15.0489 13.7084 15.77C12.6293 16.4911 11.3605 16.876 10.0625 16.876C8.32204 16.876 6.65284 16.1846 5.42213 14.9539C4.19142 13.7232 3.50002 12.054 3.50002 10.3135Z"
+                fill="#637381" />
+            </svg>
+          </button>
+          <form action="#?" class="search__form" id="search__form">
+            <input type="text" class="search__input" placeholder="Поиск">
+            <button type="submit" class="btn search__submit">
+              Найти
+            </button>
+          </form>
+        </div>
+        <div class="header__contacts">
+          <a href="tel:+74956653565" class="header__contact header__contact--bold">
+            +7 (495) 665 35 65
+          </a>
+          <a href="mailto:office@glavokna.ru" class="header__contact">
+            office@glavokna.ru
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- /.header -->
+
+  <main class="main">
+
+    <section class="search-page">
+      <div class="container search-page__container">
+        <div class="search-page__header">
+          <h1 class="title search-page__title">Результаты поиска</h1>
+          <div class="search-page__info">
+            <strong class="search-page__query">по запросу: Пластиковые окна</strong>
+            <strong class="search-page__found">найдено: 6</strong>
+          </div>
+        </div>
+
+        <div class="search-page__result">
+          <div class="search-page__item">
+            <a href="#?" class="search-page__item-link">1. Пластиковые окна</a>
+            <p class="search-page__item-desc">ПЛАСТИКОВЫЕ ОКНА ПВХ. Представляем на ваш выбор широкий ассортимент профильных систем пластиковых окон</p>
+          </div>
+          <div class="search-page__item">
+            <a href="#?" class="search-page__item-link">2. Пластиковые окна</a>
+            <p class="search-page__item-desc">ПЛАСТИКОВЫЕ ОКНА ПВХ. Представляем на ваш выбор широкий ассортимент профильных систем пластиковых окон</p>
+          </div>
+          <div class="search-page__item">
+            <a href="#?" class="search-page__item-link">3. Пластиковые окна</a>
+            <p class="search-page__item-desc">ПЛАСТИКОВЫЕ ОКНА ПВХ. Представляем на ваш выбор широкий ассортимент профильных систем пластиковых окон</p>
+          </div>
+          <div class="search-page__item">
+            <a href="#?" class="search-page__item-link">4. Пластиковые окна</a>
+            <p class="search-page__item-desc">ПЛАСТИКОВЫЕ ОКНА ПВХ. Представляем на ваш выбор широкий ассортимент профильных систем пластиковых окон</p>
+          </div>
+          <div class="search-page__item">
+            <a href="#?" class="search-page__item-link">5. Пластиковые окна</a>
+            <p class="search-page__item-desc">ПЛАСТИКОВЫЕ ОКНА ПВХ. Представляем на ваш выбор широкий ассортимент профильных систем пластиковых окон</p>
+          </div>
+          <div class="search-page__item">
+            <a href="#?" class="search-page__item-link">6. Пластиковые окна</a>
+            <p class="search-page__item-desc">ПЛАСТИКОВЫЕ ОКНА ПВХ. Представляем на ваш выбор широкий ассортимент профильных систем пластиковых окон</p>
+          </div>
+          <div class="search-page__item">
+            <p class="search-page__item-link">Ничего не найдено</p>
+            <p class="search-page__item-desc">К сожалению, на ваш поисковый запрос ничего не найдено</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.search-page -->
+
+  </main>
+  <!-- /.main -->
+
+  <section class="makers">
+    <div class="splide makers__splide">
+      <div class="splide__slider">
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide makers__slide">
+              <img src="/img/makers/kbe.png" alt="">
+            </div>
+            <div class="splide__slide makers__slide">
+              <img src="/img/makers/rehau.png" alt="">
+            </div>
+            <div class="splide__slide makers__slide">
+              <img src="/img/makers/salamander.png" alt="">
+            </div>
+            <div class="splide__slide makers__slide">
+              <img src="/img/makers/veka.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.makers -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <div class="logotype footer__logotype">
+          <picture class="logotype__image">
+            <source srcset="/img/logo-white.svg" type="image/svg+xml">
+            <source srcset="/img/logo-white.png" type="image/png">
+            <img src="/img/logo-white.svg" alt="Логотип Главокна">
+          </picture>
+          <span class="logotype__divider"></span>
+          <span class="logotype__text">Цены и качество от крупного производителя</span>
+        </div>
+
+        <div class="footer__text">
+          Компания «Главокна» была основана в 1999 году, и на сегодняшний день является одной из самых опытных на рынке
+          остекления в Москве и Московской области
+        </div>
+
+        <div class="footer__grid">
+          <div class="footer__col">
+            <span class="footer__col-title">Адрес:</span>
+            <div class="footer__contact">
+              <strong>Москва м. Савеловская,</strong><br>
+              ул. Бутырская, д.46, 6 этаж.<br>
+              Офисный центр "Стрелецкая Слобода".
+            </div>
+          </div>
+          <div class="footer__col">
+            <span class="footer__col-title">Контакты:</span>
+            <a href="tel:+74956653565" class="footer__contact footer__contact--phone">
+              +7 (495) 665 35 65
+            </a>
+            <a href="mailto:office@glavokna.ru" class="footer__contact">
+              office@glavokna.ru
+            </a>
+          </div>
+          <div class="footer__col">
+            <div class="footer__links">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#?" class="footer__link">О компании</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#?" class="footer__link">Блог</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#?" class="footer__link">Покупателю</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#?" class="footer__link">Контакты</a>
+                </li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#?" class="footer__link">Пластиковые окна</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#?" class="footer__link">Остекление балконов и лоджий</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#?" class="footer__link">Остекление коттеджей</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#?" class="footer__link">Алюминиевые окна</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__col footer__col--other">
+            <ul class="footer__list footer__list--other">
+              <li class="footer__item">
+                <a href="#?" class="footer__link">Реквизиты</a>
+              </li>
+              <li class="footer__item">
+                <a href="#?" class="footer__link">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <b class="footer__copyright-site">© 1999-2024 «Главокна» | Все права защищены</b>
+        <p class="footer__copyright-text">Наш сайт носит исключительно информационный характер и не является публичной
+          офертой, определяемой положениями Статьи 437(2) ГК РФ.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- /.footer -->
+
+  <!-- Modals -->
+  <div class="modal callback__modal --is_fade" id="callback__modal" tabindex="-1" aria-hidden="true">
+    <div class="modal__dialog callback__modal-dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <div class="logotype modal__logotype">
+            <picture class="logotype__image">
+              <source srcset="/img/logo.svg" type="image/svg+xml">
+              <source srcset="/img/logo.png" type="image/png">
+              <img src="/img/logo.svg" alt="Логотип Главокна">
+            </picture>
+          </div>
+          <strong class="modal__title">Заполните форму</strong>
+          <a href="javascript:void(0);" class="modal__close" data-modal-close="">
+            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="9.20068" y="27.4507" width="25.8094" height="1.20044" rx="0.60022"
+                transform="rotate(-45 9.20068 27.4507)" fill="currentColor" />
+              <rect x="27.4507" y="28.2996" width="25.8094" height="1.20044" rx="0.60022"
+                transform="rotate(-135 27.4507 28.2996)" fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+        <div class="modal__body">
+          <form action="" class="form modal__form" method="POST">
+            <div class="form__fields">
+              <div class="form__field">
+                <label for="" class="form__label">Ваше имя:</label>
+                <input type="text" class="form__input" name="" placeholder="">
+              </div>
+              <div class="form__field">
+                <label for="" class="form__label">Ваш телефон:</label>
+                <input type="text" class="form__input" name="" data-maskphone="" placeholder="+7 (000) 000-00-00">
+              </div>
+              <div class="form__field">
+                <label for="" class="form__label">Ваш email:</label>
+                <input type="email" class="form__input" name="" placeholder="">
+              </div>
+              <div class="form__field">
+                <label class="form__checkbox">
+                  <input type="checkbox" name="captcha_policy" class="form__checkbox-input" checked="">
+                  <span class="form__checkbox-icon"></span>
+                  <span class="form__checkbox-text">Нажимая кн. "Отправить" вы соглашаетесь с нашей <a
+                      href="#?">политикой
+                      конфиденциальности</a></span>
+                </label>
+              </div>
+              <div class="form__field form__field--center">
+                <button type="submit" class="btn modal__btn">Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/libs/splide.min.js"></script>
+  <script src="/libs/inputmask.min.js"></script>
+  <script src="/libs/glightbox.min.js"></script>
+  <script src="/libs/nouislider.min.js"></script>
+  <script src="/js/main-scripts.js"></script>
+</body>
+
+</html>
